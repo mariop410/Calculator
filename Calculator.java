@@ -11,7 +11,7 @@ public static void main(String[] args) {
     System.out.println("Enter another whole number:");
     int num2 = scanner.nextInt();
 
-    System.out.println("Woukd you like to add or subtract the two numbers");
+    System.out.println("Woukd you like to add. subtract, multiply, or divide the two numbers?");
     String answer = scanner.next();
 
     if (answer.equals("add")) {
@@ -22,6 +22,16 @@ public static void main(String[] args) {
     else if (answer.equals("subtract")) {
         int result = num1 - num2;
         System.out.println("The difference is " + result);
+    }
+
+    else if (answer.equals("multiply")) {
+        int result = num1 * num2;
+        System.out.println("The product is " + result);
+    }
+
+    else if (answer.equals("divide")) {
+        double result = (double) num1 / num2;
+        System.out.println("The quotient is " + result);
     }
 }
 
